@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class StringInterpolationComponent {
  name: string = "divyansh";
+
+ getId()
+ {
+  return 1;
+ }
 }

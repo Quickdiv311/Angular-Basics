@@ -1,0 +1,16 @@
+.correct{
+   background-color: green;
+color: white;
+padding: 1px 15px;
+}
+
+.incorrect{
+   background-color: red;
+   font-weight: bolder;
+padding: 1px 5px;
+}
+
+.container{
+    margin: 5% 20%;
+}
+

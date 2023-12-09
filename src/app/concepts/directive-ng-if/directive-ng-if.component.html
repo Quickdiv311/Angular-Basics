@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+           <button class="btn btn-primary mb-3" (click)="onClick()">{{buttonValue}}</button>
+           <p *ngIf="isDisplayed; else noDisplayed">{{'Value displayed'}}</p>
+           <ng-template #noDisplayed>
+              {{'Value no displayed'}}
+           </ng-template>
+        </div>
+    </div>
+</div>

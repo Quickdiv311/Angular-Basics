@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-primary" (click)="onClick()">Toggle</button>
+            <p *ngIf="isDisplayed">Data is here</p>
+            <ul class="list-group">
+                <li class="list-group-item" 
+                *ngFor="let number of numbers"
+                [ngStyle]="{backgroundColor: number > 4 ? 'blue': 'none'}"
+                [ngClass]="{afterFive: number > 4}">{{number}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

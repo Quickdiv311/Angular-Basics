@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" class="form-control" [(ngModel)]="num" (input)="onInput($event)">
+            <button class="btn btn-primary mt-3 mb-3" (click)="onClick()">Add</button>
+
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let number of numbers">{{number}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
