@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-primary" (click)="isOdd = !isOdd">Show Odd</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item"
+                [ngClass]="{even: i % 2 == 0, odd: i%2 !=0}"
+                [ngStyle]="{backgroundColor: i %2 != 0 && 'black'}"
+                *ngFor="let i of numbers">
+                  {{i}}    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

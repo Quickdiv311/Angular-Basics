@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"
+        (click) = "changeActive(active, i)"
+        [ngClass]="{normal: !active[i], active: active[i]}"
+        *ngFor="let number of numbers; let i = index">
+            {{number}}
+        </div>
+    </div>
+</div>

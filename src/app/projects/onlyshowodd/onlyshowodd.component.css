@@ -1,0 +1,12 @@
+.container{
+    margin: 5% 20%;
+}
+
+.even{
+    display: none;
+}
+
+.odd{
+    color: green;
+    font-weight: bolder;
+}
