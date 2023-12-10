@@ -7,18 +7,10 @@ import { Component } from '@angular/core';
 })
 export class IsActiveComponent {
   numbers: number[] =  [1,2,3,4];
-  active: boolean[] = [true,false,false,false];
+  current: number = 0;
 
-  changeActive(a: boolean[],i : number)
+  changeActive(i : number)
   {
-    for(let j=0;j<a.length;j++)
-    {
-      if(a[j] == true)
-      {
-        a[j] = false;
-        break;
-      }
-    }
-    a[i] = true;
+      this.current = i;
   }
 }
