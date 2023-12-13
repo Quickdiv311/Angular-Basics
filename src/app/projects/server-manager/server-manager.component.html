@@ -1,1 +1,9 @@
-<p>server-manager works!</p>
+<div class="container">
+    <app-server-form (serverAdded)="onServerAdded($event)" (bluePrintAdded)="onBluePrintAdded($event)"></app-server-form>
+    <hr>
+    <div class="row">
+        <div class="col-md-8">
+            <app-servers *ngFor="let serverElement of serverElements" [element]="serverElement"></app-servers>
+        </div>
+    </div>
+</div>
