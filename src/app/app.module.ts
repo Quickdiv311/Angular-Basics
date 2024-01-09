@@ -18,6 +18,7 @@ import { DirectiveNgStyleComponent } from './concepts/directive-ng-style/directi
 import { DirectiveNgClassComponent } from './concepts/directive-ng-class/directive-ng-class.component';
 import { DirectiveNgForComponent } from './concepts/directive-ng-for/directive-ng-for.component';
 import { Assignment3Component } from './practice/assignment3/assignment3.component';
+import { HighlightDirective } from './concepts/custom-directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Assignment3Component } from './practice/assignment3/assignment3.compone
     DirectiveNgStyleComponent,
     DirectiveNgClassComponent,
     DirectiveNgForComponent,
-    Assignment3Component
+    Assignment3Component,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
